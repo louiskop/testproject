@@ -46,6 +46,7 @@ def link_to_github():
     os.system("git add .")
     os.system('git commit -m "Initial-commit" ')
     os.system("git remote add origin https://github.com/louiskop/" + project_name + ".git")
+    os.system("git remote set-url origin https://github.com/louiskop/" + project_name + ".git")
     os.system("git push -u origin master")
     print("[+] Project created and linked to Github!")
     print("happy coding!")
